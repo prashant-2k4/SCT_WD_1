@@ -1,0 +1,78 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.navbar.scrolled {
+    background-color: #555;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+}
+
+.menu li a:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Section styles */
+section {
+    height: 100vh;
+    padding: 50px;
+    text-align: center;
+}
+
+#home {
+    background-color: lightcoral;
+}
+
+#about {
+    background-color: lightblue;
+}
+
+#services {
+    background-color: lightgreen;
+}
+
+#contact {
+    background-color: lightgoldenrodyellow;
+}
+
+/* Compensate for fixed navbar */
+body {
+    padding-top: 60px;
+}
+
